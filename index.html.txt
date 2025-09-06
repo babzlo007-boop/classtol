@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plant & Animal Classifier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>🌱🐾 Plant & Animal Classifier</h2>
+
+  <section>
+    <h3>Classify by Scientific Name</h3>
+    <input type="text" id="sciName" placeholder="Enter scientific name (e.g. Panthera leo)">
+    <button onclick="classifyByName()">Classify</button>
+    <pre id="result"></pre>
+  </section>
+
+  <hr>
+
+  <section>
+    <h3>Classify Plant by Image</h3>
+    <input type="file" id="plantImage" accept="image/*">
+    <button onclick="classifyPlant()">Classify</button>
+    <pre id="plantResult"></pre>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
